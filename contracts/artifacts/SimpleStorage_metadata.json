@@ -6,8 +6,50 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "favoriteNumber",
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -45,7 +87,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/SimpleStorageCont.sol": "SimpleStorage"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +101,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x1d37cfbbdfc8d9438cf114af1ffc2cf20e1afd2caa7da8368779d1c29e826bf2",
+		"contracts/SimpleStorageCont.sol": {
+			"keccak256": "0x7e80a34a25c37ea231efa55ceb8478547e12df507bf123ef8a335f7496c15be8",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://2bba98bf4f45fecb483f85bf3ddbb142e2b2e242ccd6716e224a42453303179a",
-				"dweb:/ipfs/QmdrAzGY7Q9gHHAYwyCjeHcfSauumm1yf7fDtp79wfnhNh"
+				"bzz-raw://5ce266807842073d2930615a23bea65e287ac95416766ac14b75aaadfc69d8ff",
+				"dweb:/ipfs/QmT1HySHbEH9d3D8Xqu9dnetrYKtsRP9moGWhouZ65bui5"
 			]
 		}
 	},
